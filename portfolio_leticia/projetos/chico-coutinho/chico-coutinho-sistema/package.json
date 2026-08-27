@@ -1,0 +1,12 @@
+{
+  "name": "chico-coutinho-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sistema de acompanhamento de treinos com autenticação, SQLite e chat persistente.",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=22.5"
+  }
+}

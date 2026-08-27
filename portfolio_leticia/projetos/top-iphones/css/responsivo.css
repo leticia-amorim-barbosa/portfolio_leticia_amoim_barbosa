@@ -1,0 +1,440 @@
+@media (max-width: 1120px) {
+  .topo-site {
+    grid-template-columns: 170px 1fr;
+  }
+
+  .acoes-topo {
+    grid-column: 1 / -1;
+    justify-content: flex-end;
+  }
+
+  .banner-principal {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    padding-bottom: 110px;
+  }
+
+  .imagem-banner {
+    min-height: 260px;
+  }
+
+  .faixa-categorias,
+  .grade-produtos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .produto-detalhado,
+  .corpo-carrinho,
+  .caixa-pagamento {
+    grid-template-columns: 1fr;
+  }
+
+  .resumo-pedido {
+    position: static;
+  }
+
+  .item-carrinho {
+    grid-template-columns: 100px 1fr 90px;
+  }
+
+  .subtotal-item,
+  .remover-item {
+    grid-column: 2 / -1;
+  }
+}
+
+@media (max-width: 760px) {
+  .topo-site {
+    padding: 18px 20px;
+    grid-template-columns: 1fr auto;
+    gap: 16px;
+  }
+
+  .marca-top {
+    min-width: 0;
+  }
+
+  .nome-marca {
+    font-size: 16px;
+  }
+
+  .busca-produtos {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    height: 46px;
+  }
+
+  .acoes-topo {
+    grid-column: auto;
+    gap: 14px;
+  }
+
+  .botao-whatsapp {
+    display: none;
+  }
+
+  .banner-principal {
+    padding: 44px 24px 90px;
+  }
+
+  .conteudo-banner h1 {
+    font-size: clamp(48px, 16vw, 76px);
+  }
+
+  .conteudo-banner p:not(.etiqueta-banner) {
+    font-size: 22px;
+  }
+
+  .banner-principal::after {
+    right: -240px;
+    top: 210px;
+  }
+
+  .faixa-categorias {
+    width: calc(100% - 24px);
+    margin-top: -36px;
+    padding: 22px;
+    border-radius: 24px;
+    grid-template-columns: 1fr;
+  }
+
+  .cartao-categoria {
+    min-height: 150px;
+  }
+
+  .cartao-categoria img {
+    width: 45%;
+    right: 40px;
+    left: auto;
+    transform: none;
+  }
+
+  .area-ofertas,
+  .pagina-carrinho,
+  .pagina-produto,
+  .pagina-pagamento {
+    width: calc(100% - 24px);
+  }
+
+  .grade-produtos {
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+
+  .cartao-produto {
+    min-height: 330px;
+  }
+
+  .produto-detalhado,
+  .corpo-carrinho,
+  .caixa-pagamento {
+    padding-top: 28px;
+    gap: 24px;
+  }
+
+  .imagem-produto-grande {
+    min-height: 360px;
+  }
+
+  .imagem-produto-grande img {
+    max-height: 260px;
+  }
+
+  .informacoes-produto {
+    padding: 24px;
+  }
+
+  .acoes-produto,
+  .campos-lado-a-lado {
+    grid-template-columns: 1fr;
+  }
+
+  .item-carrinho {
+    grid-template-columns: 86px 1fr;
+    gap: 14px;
+  }
+
+  .controle-quantidade,
+  .subtotal-item,
+  .remover-item {
+    grid-column: 1 / -1;
+  }
+
+  .remover-item {
+    width: 100%;
+  }
+
+  .miniaturas-produto {
+    overflow-x: auto;
+  }
+
+  .cabecalho-secao h1,
+  .cabecalho-secao h2 {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 420px) {
+  .logo-loja {
+    width: 40px;
+    height: 40px;
+  }
+
+  .botao-menu {
+    font-size: 26px;
+  }
+
+  .atalho-carrinho {
+    font-size: 22px;
+  }
+
+  .cartao-categoria img {
+    width: 52%;
+    opacity: 0.8;
+  }
+
+  .preco-produto-grande {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 1180px) {
+  .pagina-produto-escura .pagina-produto {
+    width: min(100% - 36px, 900px);
+  }
+
+  .produto-vitrine,
+  .detalhes-vitrine-produto {
+    grid-template-columns: 1fr;
+  }
+
+  .beneficios-produto {
+    grid-template-columns: 1fr;
+  }
+
+  .beneficios-produto div:not(:last-child) {
+    border-right: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+    padding-right: 0;
+    padding-bottom: 18px;
+  }
+}
+
+@media (max-width: 760px) {
+  .pagina-produto-escura .pagina-produto {
+    width: calc(100% - 24px);
+  }
+
+  .produto-vitrine {
+    gap: 30px;
+    padding-top: 24px;
+  }
+
+  .imagem-produto-destaque {
+    min-height: 390px;
+  }
+
+  .imagem-produto-destaque img {
+    max-height: 285px;
+    width: 82%;
+  }
+
+  .botoes-sociais-produto {
+    top: 18px;
+    left: 16px;
+  }
+
+  .botao-quadrado-produto {
+    width: 44px;
+    height: 44px;
+    font-size: 24px;
+  }
+
+  .trilho-miniaturas-produto {
+    display: flex;
+    overflow-x: auto;
+    padding-bottom: 6px;
+  }
+
+  .miniatura-vitrine {
+    min-width: 104px;
+    height: 92px;
+  }
+
+  .lado-compra-produto h1 {
+    font-size: 28px;
+  }
+
+  .linha-avaliacao-produto {
+    flex-wrap: wrap;
+    gap: 8px 12px;
+    margin-bottom: 28px;
+  }
+
+  .preco-vitrine-produto {
+    font-size: 43px;
+  }
+
+  .parcela-vitrine,
+  .pix-vitrine {
+    font-size: 16px;
+  }
+
+  .botao-comprar-grande,
+  .botao-pagamentos {
+    min-height: 58px;
+    font-size: 15px;
+  }
+
+  .beneficios-produto,
+  .detalhes-vitrine-produto {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 760px) {
+  .lista-cores-produto {
+    gap: 8px;
+  }
+
+  .opcao-cor-produto {
+    min-height: 40px;
+    padding: 0 13px;
+    font-size: 13px;
+  }
+
+  .botao-whatsapp-produto {
+    min-height: 58px;
+    font-size: 15px;
+  }
+}
+
+
+@media (max-width: 760px) {
+  .banner-principal {
+    padding: 0;
+  }
+
+  .slide-banner img {
+    height: 410px;
+    min-height: 410px;
+    object-position: center;
+  }
+
+  .controle-carrossel {
+    width: 40px;
+    height: 40px;
+    font-size: 34px;
+  }
+
+  .controle-anterior {
+    left: 12px;
+  }
+
+  .controle-proximo {
+    right: 12px;
+  }
+
+  .carrossel-banner .marcadores-banner {
+    bottom: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .slide-banner img {
+    height: 330px;
+    min-height: 330px;
+  }
+}
+@media (max-width: 760px) {
+  .banner-principal {
+    padding: 0;
+  }
+
+  .slide-banner img {
+    width: 100%;
+    height: auto;
+    max-height: none;
+    min-height: 0;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  .controle-carrossel {
+    width: 38px;
+    height: 38px;
+    font-size: 30px;
+  }
+
+  .controle-anterior {
+    left: 10px;
+  }
+
+  .controle-proximo {
+    right: 10px;
+  }
+
+  .carrossel-banner .marcadores-banner {
+    bottom: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .slide-banner img {
+    height: auto;
+    min-height: 0;
+    max-height: none;
+  }
+}
+@media (max-width: 1180px) {
+  .banner-principal {
+    padding: 0 !important;
+    min-height: auto !important;
+    height: auto !important;
+  }
+
+  .carrossel-banner {
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  .slide-banner img {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    object-fit: contain !important;
+    object-position: center center !important;
+  }
+}
+
+@media (max-width: 760px) {
+  .banner-principal {
+    padding: 0 !important;
+  }
+
+  .slide-banner img {
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    object-fit: contain !important;
+  }
+
+  .controle-carrossel {
+    width: 36px;
+    height: 36px;
+    font-size: 28px;
+  }
+
+  .controle-anterior {
+    left: 8px;
+  }
+
+  .controle-proximo {
+    right: 8px;
+  }
+
+  .carrossel-banner .marcadores-banner {
+    bottom: 10px;
+  }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="imagens/logo-top-iphones.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Top iPhones</title>
+  <link rel="stylesheet" href="css/estilo.css" />
+  <link rel="stylesheet" href="css/responsivo.css" />
+</head>
+<body>
+  <header class="topo-site">
+    <a class="marca-top" href="index.html" aria-label="Ir para a página inicial">
+      <img src="imagens/logo-top-iphones.png" alt="Top iPhones" class="logo-loja" />
+    </a>
+    <nav class="acoes-topo" aria-label="Ações principais">
+      <a class="botao-whatsapp" href="https://wa.me/5524992484443" target="_blank" rel="noopener" data-whatsapp-topo>◉ WhatsApp</a>
+      <button class="botao-menu" type="button" aria-label="Abrir menu">☰</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="banner-principal" aria-label="Destaques da loja">
+      <div class="carrossel-banner" id="carrossel-banner">
+        <a class="slide-banner slide-ativo" href="#ofertas" aria-label="Conheça nossas motos elétricas">
+          <img src="imagens/carrossel-motos-eletricas.png" alt="Agora a Top está motorizada. Conheça nossas motos elétricas." />
+        </a>
+        <a class="slide-banner" href="#ofertas" aria-label="Confira nossos iPhones">
+          <img src="imagens/carrossel-iphones-angra.png" alt="Vem para a melhor de Angra. Confira nossos iPhones." />
+        </a>
+
+        <button class="controle-carrossel controle-anterior" type="button" aria-label="Banner anterior">‹</button>
+        <button class="controle-carrossel controle-proximo" type="button" aria-label="Próximo banner">›</button>
+
+        <div class="marcadores-banner" aria-label="Selecionar banner">
+          <button class="marcador-ativo" type="button" aria-label="Mostrar banner 1"></button>
+          <button type="button" aria-label="Mostrar banner 2"></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="faixa-categorias" aria-label="Categorias da loja">
+      <a class="cartao-categoria" href="#ofertas" data-categoria="iPhones Lacrados">
+        <img src="imagens/categoria-iphones-lacrados.png" alt="iPhones lacrados" />
+        <strong>iPhones<br />Lacrados</strong>
+        <span>›</span>
+      </a>
+      <a class="cartao-categoria" href="#ofertas" data-categoria="Seminovos">
+        <img src="imagens/categoria-seminovos.png" alt="iPhones seminovos" />
+        <strong>Seminovos</strong>
+        <span>›</span>
+      </a>
+      <a class="cartao-categoria" href="#ofertas" data-categoria="Motos Elétricas">
+        <img src="imagens/categoria-motos.png" alt="Motos elétricas" />
+        <strong>Motos<br />Elétricas</strong>
+        <span>›</span>
+      </a>
+      <a class="cartao-categoria" href="#ofertas" data-categoria="Acessórios">
+        <img src="imagens/categoria-acessorios.png" alt="Acessórios" />
+        <strong>Acessórios</strong>
+        <span>›</span>
+      </a>
+    </section>
+
+    <section class="area-ofertas" id="ofertas">
+      <div class="cabecalho-secao">
+        <h2>Ofertas</h2>
+        <span></span>
+      </div>
+      <div class="grade-produtos" id="grade-produtos"></div>
+    </section>
+  </main>
+
+  <footer class="rodape-site">
+    <p>Top iPhones Catálogo — projeto demonstrativo em HTML, CSS e JavaScript puro.</p>
+  </footer>
+
+  <script src="js/produtos.js"></script>
+  <script src="js/principal.js"></script>
+</body>
+</html>

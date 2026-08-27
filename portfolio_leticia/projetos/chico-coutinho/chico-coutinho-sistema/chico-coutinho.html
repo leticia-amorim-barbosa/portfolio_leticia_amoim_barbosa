@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+<meta content="#0a0a0a" name="theme-color"/>
+<meta content="yes" name="apple-mobile-web-app-capable"/>
+<meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"/>
+<meta content="Chico Coutinho Personal Trainer - Transformação física com acompanhamento personalizado" name="description"/>
+<title>Chico Coutinho · Personal Trainer</title>
+<link href="chico-coutinho.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Barlow:wght@300;400;500;600;700;900&amp;family=Barlow+Condensed:wght@400;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link rel="icon" type="image/png" href="ICONE.png">
+</head>
+<body>
+<!-- ═══════ LANDING PAGE ═══════ -->
+<div class="view active" id="view-landing">
+<!-- NAV -->
+<nav aria-label="Navegação principal" class="lp-nav">
+<a aria-label="Chico Coutinho - início" class="lp-logo lp-logo-image" href="#inicio">
+<img alt="Chico Coutinho Personal Trainer" src="Logo Chico Transparente.png"/>
+</a>
+<div class="lp-nav-links">
+<a href="#metodo">Método</a>
+<a href="#resultados">Resultados</a>
+<a href="#sobre">Sobre</a>
+<a href="#planos">Planos</a>
+</div>
+<div class="lp-nav-btns">
+<button class="btn btn-outline lp-login-btn" onclick="showView('login')">Entrar</button>
+<a class="btn btn-primary lp-wa-btn" data-wa-link="1" href="#">Falar com Chico</a>
+<button class="btn btn-primary" id="nav-cadastro-btn" onclick="showView('register')" style="display:none">Começar</button>
+</div>
+</nav>
+<!-- HERO -->
+<section class="hero" id="inicio">
+<div class="hero-bg"></div>
+<div class="hero-grid"></div>
+<div class="hero-inner">
+<div class="hero-copy">
+<div class="hero-badge"><span></span> Treinamento 100% personalizado</div>
+<h1>TRANSFORME<br/>SEU <span>CORPO</span><br/>&amp; MENTE</h1>
+<p class="hero-sub">Personal Trainer</p>
+<p class="hero-desc">Resultados reais com metodologia científica, acompanhamento próximo e treinos feitos exclusivamente para você.</p>
+<div class="hero-ctas">
+<button class="btn btn-primary btn-xl" onclick="showView('register')">Começar Agora</button>
+<a class="btn btn-text" data-wa-link="1" href="#">Falar no WhatsApp <span>↗</span></a>
+</div>
+</div>
+<div aria-label="Chico Coutinho Personal Trainer" class="hero-visual">
+<div class="hero-photo-frame">
+<img alt="Chico Coutinho" src="chico se tu me quiseres.png"/>
+</div>
+<div class="hero-visual-caption">
+<span>CHICO COUTINHO</span>
+<small>PERSONAL TRAINER</small>
+</div>
+<div class="hero-mark">CC</div>
+</div>
+</div>
+<div aria-label="Números do acompanhamento" class="hero-stats"><div class="stat-item"><div class="stat-num" id="public-students">0</div><div class="stat-label">Alunos cadastrados</div></div><div class="stat-item"><div class="stat-num" id="public-active-workouts">0</div><div class="stat-label">Treinos ativos</div></div><div class="stat-item"><div class="stat-num" id="public-completed-workouts">0</div><div class="stat-label">Treinos concluídos</div></div></div>
+</section>
+<!-- COMO FUNCIONA -->
+<section class="section section-method" id="metodo">
+<div class="section-intro">
+<div>
+<p class="section-label">Metodologia</p>
+<h2 class="section-title">UM PROCESSO<br/>QUE FAZ SENTIDO.</h2>
+</div>
+<p class="section-desc">Acompanhamento pensado para sair do improviso: entender seu momento, montar o plano certo, acompanhar a execução e ajustar a rota.</p>
+</div>
+<div class="method-layout">
+<div class="method-device">
+<div class="device-glow"></div>
+<img alt="Tela do acompanhamento de treino" src="celular.png"/>
+<div class="device-note">
+<span>ACOMPANHAMENTO</span>
+<strong>Treino, orientação e evolução no mesmo lugar.</strong>
+</div>
+</div>
+<div class="steps">
+<article class="step-card">
+<div class="step-num">01</div>
+<div class="step-copy">
+<h3>Avaliação Inicial</h3>
+<p>Análise completa do seu perfil, objetivos, histórico e disponibilidade para criar o plano ideal.</p>
+</div>
+</article>
+<article class="step-card">
+<div class="step-num">02</div>
+<div class="step-copy">
+<h3>Treino Personalizado</h3>
+<p>Montagem de treinos 100% individualizados com vídeos, instruções e periodização inteligente.</p>
+</div>
+</article>
+<article class="step-card">
+<div class="step-num">03</div>
+<div class="step-copy">
+<h3>Acompanhamento</h3>
+<p>Acesso ao app exclusivo para executar treinos, acompanhar evolução e falar com o Chico.</p>
+</div>
+</article>
+<article class="step-card">
+<div class="step-num">04</div>
+<div class="step-copy">
+<h3>Evolução Contínua</h3>
+<p>Ajustes periódicos baseados em dados reais de progresso, garantindo resultados constantes.</p>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- RESULTADOS / DEPOIMENTOS 
+<section class="section section-results" id="resultados">
+<div class="section-intro">
+<div><p class="section-label">Resultados</p><h2 class="section-title">DEPOIMENTOS<br/>REAIS</h2></div>
+<p class="section-desc">Esta área está pronta para receber somente depoimentos reais antes da publicação.</p>
+</div>
+<div class="empty-state"><div class="empty-icon">✦</div><h3>Sem depoimentos cadastrados</h3><p>Nenhum relato fictício é exibido.</p></div>
+</section>-->
+<!-- SOBRE -->
+<section class="section section-about" id="sobre">
+<div class="sobre-grid">
+<div class="sobre-visual">
+<img alt="Chico Coutinho" class="sobre-photo" src="chico se tu me quiseres.png"/>
+<div class="sobre-badge-float">
+<div class="sobre-badge-index">01</div>
+<div class="sobre-badge-text"><strong>Acompanhamento personalizado</strong><span>Treino, progresso e contato em um só sistema</span></div>
+</div>
+</div>
+<div class="sobre-content">
+<p class="section-label">Sobre</p>
+<h2 class="section-title">CHICO<br/>COUTINHO</h2>
+<p class="section-desc">Acompanhamento com treino individualizado, registro de progresso e comunicação direta pelo sistema.</p>
+<div class="sobre-tags"><span class="tag tag-yellow">Treinos personalizados</span><span class="tag tag-yellow">Acompanhamento</span><span class="tag tag-yellow">Evolução</span><span class="tag tag-yellow">Chat</span></div>
+<ul class="sobre-list"><li>Treinos atribuídos individualmente</li><li>Histórico de treinos concluídos</li><li>Acompanhamento de medidas e mensagens</li></ul>
+<button class="btn btn-primary mt-24" onclick="showView('register')">Quero treinar com o Chico</button>
+</div>
+</div>
+</section>
+<!-- PLANOS -->
+<section class="section section-plans" id="planos">
+<div class="section-intro">
+<div>
+<p class="section-label">Investimento</p>
+<h2 class="section-title">ESCOLHA SEU<br/>NÍVEL DE SUPORTE.</h2>
+</div>
+<p class="section-desc">Três formatos de acompanhamento para diferentes momentos da sua rotina e dos seus objetivos.</p>
+</div>
+<div class="plans-grid">
+<article class="plan-card">
+<div class="plan-top">
+<p class="plan-name">Essencial</p>
+<div class="plan-price">R$69,99<span>/mês</span></div>
+</div>
+<ul class="plan-features">
+<li>planilha de treino personalizado semanal</li>
+<li>Acesso ao app</li>
+<li>Biblioteca de exercícios com vídeo</li>
+<li>Suporte via mensagem</li>
+<li>Avaliação mensal</li>
+</ul>
+<button class="btn btn-outline btn-block" onclick="showView('register')">Escolher Plano</button>
+</article>
+<article class="plan-card featured">
+<span class="plan-badge">MAIS POPULAR</span>
+<div class="plan-top">
+<p class="plan-name">Premium</p>
+<div class="plan-price">R$119,99<span>/mês</span></div>
+</div>
+<ul class="plan-features">
+<li>Treinos diários personalizados</li>
+<li>Treino de natação e corrida (triatlon)</li>
+<li>Vídeos demonstrativos</li>
+<li>Mensagens ilimitadas</li>
+<li>Avaliação quinzenal</li>
+<li>Planilha de evolução</li>
+<li>Orientação nutricional básica</li>
+</ul>
+<button class="btn btn-primary btn-block" onclick="showView('register')">Escolher Plano</button>
+</article>
+<article class="plan-card">
+<div class="plan-top">
+<p class="plan-name">Elite</p>
+<div class="plan-price">R$279,99<span>/mês</span></div>
+</div>
+<ul class="plan-features">
+<li>Treino de natação e corrida personalizado</li>
+<li>Sessões presenciais</li>
+<li>Periodização avançada</li>
+<li>Check-ins semanais por vídeo</li>
+<li>Plano alimentar completo</li>
+<li>Suporte prioritário 24h</li>
+</ul>
+<button class="btn btn-outline btn-block" onclick="showView('register')">Escolher Plano</button>
+</article>
+</div>
+</section>
+<!-- CTA -->
+<section class="cta-section">
+<div class="cta-inner">
+<p class="section-label">Pronto para começar?</p>
+<h2 class="section-title">SUA TRANSFORMAÇÃO<br/>COMEÇA <span>HOJE.</span></h2>
+<p>Crie sua conta para receber seus treinos e acompanhar sua evolução.</p>
+<div class="cta-actions">
+<button class="btn btn-primary btn-xl" onclick="showView('register')">Criar Conta Gratuita</button>
+<a class="btn btn-text" data-wa-link="1" href="#">Falar com o Chico <span>↗</span></a>
+</div>
+</div>
+</section>
+<!-- FOOTER -->
+<footer class="lp-footer-wrap">
+<div class="lp-footer">
+<div class="footer-brand">
+<img alt="Chico Coutinho Personal Trainer" src="Logo Chico Transparente.png"/>
+<p class="footer-copy">© 2025 Chico Coutinho Personal Trainer</p>
+</div>
+<div class="footer-links">
+<a href="#">Privacidade</a>
+<a href="#">Termos</a>
+<a data-wa-link="1" href="#">WhatsApp</a>
+<a href="#" onclick="showView('login')">Login</a>
+</div>
+</div>
+</footer>
+</div>
+<!-- ═══════ LOGIN ═══════ -->
+<div class="view" id="view-login">
+<div class="auth-screen">
+<div class="auth-bg"></div>
+<div class="auth-card">
+<div class="auth-logo"><img alt="Chico Coutinho" src="Logo Chico Transparente.png"/></div>
+<h2 class="auth-title">Entrar</h2>
+<p class="auth-desc">Acesse sua conta e continue seu acompanhamento.</p>
+<div class="system-notice hidden" id="admin-setup-notice">
+<strong>Primeira configuração</strong>
+<span>Ainda não existe uma conta administrativa.</span>
+<button class="btn btn-outline btn-block" onclick="showView('admin-setup')" type="button">Configurar acesso do Chico</button>
+</div>
+<form id="login-form" onsubmit="event.preventDefault(); login();">
+<div class="form-group">
+<label class="form-label" for="login-email">E-mail</label>
+<input autocomplete="email" class="form-input" id="login-email" placeholder="seu@email.com" required="" type="email"/>
+</div>
+<div class="form-group">
+<label class="form-label" for="login-password">Senha</label>
+<input autocomplete="current-password" class="form-input" id="login-password" minlength="8" placeholder="••••••••" required="" type="password"/>
+</div>
+<div class="form-error" id="login-error"></div>
+<button class="btn btn-primary btn-block" id="login-submit" type="submit">Entrar</button>
+</form>
+<p class="auth-alt">Não tem conta? <a href="#" onclick="showView('register');return false">Criar conta</a></p>
+<p class="auth-alt" style="margin-top:8px"><a href="#" onclick="showView('landing');return false" style="color:var(--gray)">← Voltar ao site</a></p>
+</div>
+</div>
+</div>
+<!-- ═══════ REGISTER ═══════ -->
+<div class="view" id="view-register">
+<div class="auth-screen">
+<div class="auth-bg"></div>
+<div class="auth-card" style="max-width:480px">
+<div class="auth-logo"><img alt="Chico Coutinho" src="Logo Chico Transparente.png"/></div>
+<h2 class="auth-title">Criar conta</h2>
+<p class="auth-desc">Seu acesso será salvo e ficará vinculado aos treinos criados pelo Chico.</p>
+<form id="register-form" onsubmit="event.preventDefault(); register();">
+<div class="form-row">
+<div class="form-group"><label class="form-label" for="reg-first">Nome</label><input autocomplete="given-name" class="form-input" id="reg-first" required="" type="text"/></div>
+<div class="form-group"><label class="form-label" for="reg-last">Sobrenome</label><input autocomplete="family-name" class="form-input" id="reg-last" type="text"/></div>
+</div>
+<div class="form-group"><label class="form-label" for="reg-email">E-mail</label><input autocomplete="email" class="form-input" id="reg-email" required="" type="email"/></div>
+<div class="form-group"><label class="form-label" for="reg-password">Senha</label><input autocomplete="new-password" class="form-input" id="reg-password" minlength="8" placeholder="Mínimo 8 caracteres" required="" type="password"/></div>
+<div class="form-group"><label class="form-label" for="reg-phone">WhatsApp</label><input autocomplete="tel" class="form-input" id="reg-phone" type="tel"/></div>
+<div class="form-error" id="register-error"></div>
+<button class="btn btn-primary btn-block" id="register-submit" type="submit">Criar conta</button>
+</form>
+<p class="auth-alt">Já tem conta? <a href="#" onclick="showView('login');return false">Entrar</a></p>
+<p class="auth-alt" style="margin-top:8px"><a href="#" onclick="showView('landing');return false" style="color:var(--gray)">← Voltar ao site</a></p>
+</div>
+</div>
+</div>
+<!-- ═══════ APP SHELL ═══════ -->
+<div class="view" id="view-admin-setup">
+<div class="auth-screen">
+<div class="auth-bg"></div>
+<div class="auth-card" style="max-width:480px">
+<div class="auth-logo"><img alt="Chico Coutinho" src="Logo Chico Transparente.png"/></div>
+<div class="eyebrow">Configuração inicial</div>
+<h2 class="auth-title">Acesso do Chico</h2>
+<p class="auth-desc">Essa etapa aparece somente enquanto ainda não existe administrador no banco.</p>
+<form id="admin-setup-form" onsubmit="event.preventDefault(); setupAdmin();">
+<div class="form-group"><label class="form-label" for="setup-name">Nome</label><input class="form-input" id="setup-name" required="" type="text"/></div>
+<div class="form-group"><label class="form-label" for="setup-email">E-mail</label><input class="form-input" id="setup-email" required="" type="email"/></div>
+<div class="form-group"><label class="form-label" for="setup-phone">WhatsApp</label><input class="form-input" id="setup-phone" type="tel"/></div>
+<div class="form-group"><label class="form-label" for="setup-password">Senha</label><input class="form-input" id="setup-password" minlength="8" required="" type="password"/></div>
+<div class="form-error" id="setup-error"></div>
+<button class="btn btn-primary btn-block" id="setup-submit" type="submit">Criar administrador</button>
+</form>
+<p class="auth-alt"><a href="#" onclick="showView('login');return false" style="color:var(--gray)">← Voltar ao login</a></p>
+</div>
+</div>
+</div><div class="app-shell" id="app-shell">
+<!-- Sidebar Overlay -->
+<div class="sidebar-overlay" id="sidebar-overlay" onclick="closeSidebar()"></div>
+<!-- SIDEBAR -->
+<aside class="sidebar" id="sidebar">
+<div class="sidebar-header">
+<div class="lp-logo">
+</div>
+<div class="sidebar-close" onclick="closeSidebar()">✕</div>
+</div>
+<!-- ALUNO NAV -->
+<nav class="sidebar-nav" id="nav-aluno">
+<div class="nav-section"><span class="nav-section-label">Principal</span></div>
+<div class="nav-item active" onclick="showPage('dashboard-aluno','nav-aluno')">
+<span class="nav-icon">⚡</span> Dashboard
+      </div>
+<div class="nav-item" onclick="showPage('meu-treino','nav-aluno')">
+<span class="nav-icon">💪</span> Meu Treino
+      </div>
+<div class="nav-item" onclick="showPage('calendario-aluno','nav-aluno')">
+<span class="nav-icon">📅</span> Calendário
+      </div>
+<div class="nav-section"><span class="nav-section-label">Progresso</span></div>
+<div class="nav-item" onclick="showPage('historico','nav-aluno')">
+<span class="nav-icon">📋</span> Histórico
+      </div>
+<div class="nav-item" onclick="showPage('evolucao-aluno','nav-aluno')">
+<span class="nav-icon">📈</span> Evolução
+      </div>
+<div class="nav-section"><span class="nav-section-label">Comunicação</span></div>
+<div class="nav-item" onclick="showPage('mensagens','nav-aluno')">
+<span class="nav-icon">💬</span> Mensagens
+      </div>
+<div class="nav-item" onclick="showPage('perfil-aluno','nav-aluno')">
+<span class="nav-icon">👤</span> Perfil
+      </div>
+</nav>
+<!-- PROFESSOR NAV -->
+<nav class="sidebar-nav hidden" id="nav-professor">
+<div class="nav-section"><span class="nav-section-label">Gestão</span></div>
+<div class="nav-item active" onclick="showPage('dashboard-prof','nav-professor')">
+<span class="nav-icon">📊</span> Dashboard
+      </div>
+<div class="nav-item" onclick="showPage('alunos','nav-professor')">
+<span class="nav-icon">👥</span> Alunos
+      </div>
+<div class="nav-item" onclick="showPage('montar-treino','nav-professor')">
+<span class="nav-icon">🏋️</span> Montar Treino
+      </div>
+<div class="nav-section"><span class="nav-section-label">Acompanhamento</span></div>
+<div class="nav-item" onclick="showPage('agenda','nav-professor')">
+<span class="nav-icon">📅</span> Agenda
+      </div>
+<div class="nav-item" onclick="showPage('evolucao-prof','nav-professor')">
+<span class="nav-icon">📈</span> Evolução
+      </div>
+<div class="nav-item" onclick="showPage('mensagens','nav-professor')">
+<span class="nav-icon">💬</span> Mensagens
+      </div>
+<div class="nav-item" onclick="showPage('config-prof','nav-professor')">
+<span class="nav-icon">⚙️</span> Configurações
+      </div>
+</nav>
+<div class="sidebar-footer">
+<div class="user-pill">
+<div class="user-avatar" id="sidebar-avatar"></div>
+<div>
+<div class="user-name" id="sidebar-name"></div>
+<div class="user-role" id="sidebar-role"></div>
+</div>
+<div class="user-logout" onclick="logout()" title="Sair">⏏</div>
+</div>
+</div>
+</aside>
+<!-- MAIN -->
+<div class="main-content">
+<div class="topbar">
+<div class="topbar-menu" onclick="toggleSidebar()">
+<svg fill="none" height="12" viewbox="0 0 18 12" width="18">
+<rect fill="currentColor" height="2" rx="1" width="18"></rect>
+<rect fill="currentColor" height="2" rx="1" width="12" y="5"></rect>
+<rect fill="currentColor" height="2" rx="1" width="18" y="10"></rect>
+</svg>
+</div>
+<div class="topbar-title" id="topbar-title">Dashboard</div>
+<div class="topbar-actions">
+<div class="icon-btn">🔔<div class="notif-dot"></div></div>
+<div class="icon-btn" onclick="logout()">⏏</div>
+</div>
+</div>
+<!-- ─── DASHBOARD ALUNO ─── -->
+<div class="page active" id="page-dashboard-aluno">
+<div class="page-header">
+<p class="page-greeting" id="dash-date"></p>
+<h1 class="page-title">Olá, <span id="dash-name"></span> 👊</h1>
+</div>
+<div id="student-dashboard-content"><div class="skeleton-card"></div></div>
+</div>
+<!-- ─── MEU TREINO ─── -->
+<div class="page" id="page-meu-treino">
+<div class="workout-page-head">
+<div>
+<p class="page-greeting">Seu treino</p>
+<h1 class="page-title">Hora de<br/><span>treinar</span></h1>
+</div>
+<select class="form-input workout-select" id="workout-select" onchange="selectWorkout(this.value)"></select>
+</div>
+<div id="workout-content"><div class="skeleton-card"></div></div>
+</div>
+<!-- ─── HISTÓRICO ─── -->
+<div class="page" id="page-historico">
+<div class="page-header">
+<p class="page-greeting">Seus registros reais</p>
+<h1 class="page-title">Histórico de<br/><span>Treinos</span></h1>
+</div>
+<div class="stacks" id="history-list"></div>
+</div>
+<!-- ─── EVOLUÇÃO ALUNO ─── -->
+<div class="page" id="page-evolucao-aluno">
+<div class="page-header">
+<p class="page-greeting">Acompanhamento</p>
+<h1 class="page-title">Minha<br/><span>Evolução</span></h1>
+</div>
+<div class="card mb-12">
+<h3 class="condensed mb-12">Registrar medidas</h3>
+<form id="measurement-form" onsubmit="event.preventDefault();saveMeasurement();">
+<div class="input-row">
+<div class="form-group"><label class="form-label">Data</label><input class="form-input" id="measure-date" required="" type="date"/></div>
+<div class="form-group"><label class="form-label">Peso (kg)</label><input class="form-input" id="measure-weight" step="0.1" type="number"/></div>
+<div class="form-group"><label class="form-label">% gordura</label><input class="form-input" id="measure-fat" step="0.1" type="number"/></div>
+</div>
+<div class="input-row">
+<div class="form-group"><label class="form-label">Cintura (cm)</label><input class="form-input" id="measure-waist" step="0.1" type="number"/></div>
+<div class="form-group"><label class="form-label">Peito (cm)</label><input class="form-input" id="measure-chest" step="0.1" type="number"/></div>
+<div class="form-group"><label class="form-label">Quadril (cm)</label><input class="form-input" id="measure-hip" step="0.1" type="number"/></div>
+</div>
+<div class="form-group"><label class="form-label">Observação</label><input class="form-input" id="measure-note" type="text"/></div>
+<button class="btn btn-primary" type="submit">Salvar medidas</button>
+</form>
+</div>
+<div id="measurements-list"></div>
+</div>
+<!-- ─── CALENDÁRIO ─── -->
+<div class="page" id="page-calendario-aluno">
+<div class="page-header">
+<p class="page-greeting">Sua rotina</p>
+<h1 class="page-title">Calendário de<br/><span>Treinos</span></h1>
+</div>
+<div id="calendar-real"></div>
+</div>
+<!-- ─── MENSAGENS ─── -->
+<div class="page" id="page-mensagens">
+<div class="chat-shell">
+<aside class="chat-contacts">
+<div class="chat-contacts-head">
+<p class="page-greeting">Comunicação</p>
+<h2 class="condensed">Mensagens</h2>
+</div>
+<div class="chat-contact-list" id="chat-contacts-list"></div>
+</aside>
+<section class="chat-conversation">
+<div class="chat-head">
+<div>
+<strong id="chat-peer-name">Selecione uma conversa</strong>
+<span id="chat-peer-status">Mensagens ficam salvas no sistema</span>
+</div>
+</div>
+<div class="msg-list" id="msg-list"></div>
+<form class="msg-input-row" id="msg-form" onsubmit="event.preventDefault();sendMsg();">
+<input autocomplete="off" class="msg-input" id="msg-input" maxlength="2000" placeholder="Escreva uma mensagem..." type="text"/>
+<button aria-label="Enviar" class="msg-send" type="submit">➤</button>
+</form>
+</section>
+</div>
+</div>
+<!-- ─── PERFIL ALUNO ─── -->
+<div class="page" id="page-perfil-aluno">
+<div class="page-header">
+<h1 class="page-title">Meu<br/><span>Perfil</span></h1>
+</div>
+<div class="profile-real-card card mb-12"> 
+<div class="profile-real-avatar" id="profile-avatar"></div>
+<div><h3 id="profile-name"></h3><p class="gray" id="profile-email"></p></div>
+</div>
+<div class="card mb-12">
+<h3 class="condensed mb-12">Dados da conta</h3>
+<form id="profile-form" onsubmit="event.preventDefault();saveProfile();">
+<div class="form-group"><label class="form-label">Nome completo</label><input class="form-input" id="profile-input-name" required=""/></div>
+<div class="form-group"><label class="form-label">WhatsApp</label><input class="form-input" id="profile-input-phone"/></div>
+<div class="form-row">
+<div class="form-group"><label class="form-label">Objetivo</label><input class="form-input" id="profile-objective"/></div>
+<div class="form-group"><label class="form-label">Nível</label><select class="form-input" id="profile-level"><option value="">Não informado</option><option>Iniciante</option><option>Intermediário</option><option>Avançado</option></select></div>
+</div>
+<button class="btn btn-primary" type="submit">Salvar alterações</button>
+</form>
+</div>
+<button class="btn btn-outline btn-block" onclick="logout()">Sair da conta</button>
+</div>
+<!-- ─── DASHBOARD PROFESSOR ─── -->
+<div class="page" id="page-dashboard-prof">
+<div class="page-header">
+<p class="page-greeting" id="prof-date"></p>
+<h1 class="page-title">Painel<br/><span>Chico</span></h1>
+</div>
+<div id="prof-dashboard-content"><div class="skeleton-card"></div></div>
+</div>
+<!-- ─── ALUNOS ─── -->
+<div class="page" id="page-alunos">
+<div class="page-header row">
+<div><p class="page-greeting">Gerenciamento real</p><h1 class="page-title">Meus<br/><span>Alunos</span></h1></div>
+<button class="btn btn-primary" onclick="showPage('montar-treino','nav-professor')" style="align-self:flex-end">+ Novo treino</button>
+</div>
+<div class="card card-sm mb-12"><input class="form-input" id="student-search" oninput="renderStudents(this.value)" placeholder="Buscar aluno..." type="search"/></div>
+<div class="stacks" id="students-list"></div>
+</div>
+<!-- ─── MONTAR TREINO ─── -->
+<div class="page" id="page-montar-treino">
+<div class="page-header">
+<p class="page-greeting">Criação de treino</p>
+<h1 class="page-title">Montar<br/><span>Treino</span></h1>
+</div>
+<form id="workout-builder-form" onsubmit="event.preventDefault();saveWorkout();">
+<div class="card mb-12">
+<h3 class="condensed mb-12">Informações do treino</h3>
+<div class="form-group"><label class="form-label">Aluno</label><select class="form-input" id="builder-student" required=""></select></div>
+<div class="form-row">
+<div class="form-group"><label class="form-label">Nome</label><input class="form-input" id="builder-title" placeholder="Ex: Peito e tríceps" required=""/></div>
+<div class="form-group"><label class="form-label">Identificação</label><input class="form-input" id="builder-code" placeholder="Ex: A"/></div>
+</div>
+<div class="form-row">
+<div class="form-group"><label class="form-label">Dia</label><select class="form-input" id="builder-day"><option value="">Sem dia fixo</option><option>Segunda</option><option>Terça</option><option>Quarta</option><option>Quinta</option><option>Sexta</option><option>Sábado</option><option>Domingo</option></select></div>
+<div class="form-group"><label class="form-label">Tempo estimado (min)</label><input class="form-input" id="builder-minutes" max="300" min="1" type="number"/></div>
+</div>
+<div class="form-group"><label class="form-label">Objetivo</label><input class="form-input" id="builder-goal" placeholder="Ex: Hipertrofia"/></div>
+<div class="form-group"><label class="form-label">Orientações gerais</label><textarea class="form-input textarea-real" id="builder-notes" rows="3"></textarea></div>
+</div>
+<div class="card mb-12">
+<div class="row section-head mb-12"><h3 class="condensed">Exercícios</h3><button class="btn btn-outline" onclick="addExerciseRow()" type="button">+ Adicionar</button></div>
+<div class="builder-exercises" id="builder-exercises"></div>
+</div>
+<button class="btn btn-primary btn-block" id="save-workout-btn" type="submit">Salvar treino no aluno</button>
+</form>
+</div>
+<!-- ─── EVOLUÇÃO PROFESSOR ─── -->
+<div class="page" id="page-evolucao-prof">
+<div class="page-header"><p class="page-greeting">Dados reais</p><h1 class="page-title">Evolução dos<br/><span>Alunos</span></h1></div>
+<div class="card mb-12"><label class="form-label">Aluno</label><select class="form-input" id="prof-measure-student" onchange="loadAdminMeasurements()"></select></div>
+<div id="prof-measurements-list"></div>
+</div>
+<!-- ─── AGENDA ─── -->
+<div class="page" id="page-agenda">
+<div class="page-header"><p class="page-greeting">Treinos atribuídos</p><h1 class="page-title">Agenda</h1></div>
+<div id="agenda-list"></div>
+</div>
+<!-- ─── CONFIG PROFESSOR ─── -->
+<div class="page" id="page-config-prof">
+<div class="page-header"><h1 class="page-title">Configurações</h1></div>
+<div class="profile-real-card card mb-12">
+<div class="profile-real-avatar" id="admin-profile-avatar"></div>
+<div><h3 id="admin-profile-name"></h3><p class="gray" id="admin-profile-email"></p></div>
+</div>
+<div class="card mb-12">
+<h3 class="condensed mb-12">Perfil</h3>
+<form onsubmit="event.preventDefault();saveAdminProfile();">
+<div class="form-group"><label class="form-label">Nome completo</label><input class="form-input" id="admin-input-name" required=""/></div>
+<div class="form-group"><label class="form-label">WhatsApp</label><input class="form-input" id="admin-input-phone"/></div>
+<button class="btn btn-primary" type="submit">Salvar</button>
+</form>
+</div>
+<button class="btn btn-outline btn-block" onclick="logout()">Sair da conta</button>
+</div>
+</div><!-- /main-content -->
+<!-- BOTTOM NAV ALUNO -->
+<div class="bottom-nav" id="bottom-nav-aluno">
+<div class="bottom-nav-item active" onclick="showPage('dashboard-aluno','nav-aluno');setBottomActive(this)"><div class="bn-icon">⚡</div>Início</div>
+<div class="bottom-nav-item" onclick="showPage('meu-treino','nav-aluno');setBottomActive(this)"><div class="bn-icon">💪</div>Treino</div>
+<div class="bottom-nav-item" onclick="showPage('calendario-aluno','nav-aluno');setBottomActive(this)"><div class="bn-icon">📅</div>Agenda</div>
+<div class="bottom-nav-item" onclick="showPage('evolucao-aluno','nav-aluno');setBottomActive(this)"><div class="bn-icon">📈</div>Evolução</div>
+<div class="bottom-nav-item" onclick="showPage('mensagens','nav-aluno');setBottomActive(this)"><div class="bn-icon">💬</div>Chat</div>
+</div>
+<!-- BOTTOM NAV PROFESSOR -->
+<div class="bottom-nav hidden" id="bottom-nav-prof">
+<div class="bottom-nav-item active" onclick="showPage('dashboard-prof','nav-professor');setBottomActive(this)"><div class="bn-icon">📊</div>Painel</div>
+<div class="bottom-nav-item" onclick="showPage('alunos','nav-professor');setBottomActive(this)"><div class="bn-icon">👥</div>Alunos</div>
+<div class="bottom-nav-item" onclick="showPage('montar-treino','nav-professor');setBottomActive(this)"><div class="bn-icon">🏋️</div>Treino</div>
+<div class="bottom-nav-item" onclick="showPage('mensagens','nav-professor');setBottomActive(this)"><div class="bn-icon">💬</div>Chat</div>
+<div class="bottom-nav-item" onclick="showPage('config-prof','nav-professor');setBottomActive(this)"><div class="bn-icon">⚙️</div>Config</div>
+</div>
+</div><!-- /app-shell -->
+<!-- WHATSAPP FLOAT (landing) -->
+<a aria-label="WhatsApp" class="whatsapp-float" data-wa-link="1" href="#" id="wa-float">💬</a>
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+<script src="chico-coutinho.js"></script>
+</body>
+</html>
